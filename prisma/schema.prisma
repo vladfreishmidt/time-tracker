@@ -17,6 +17,7 @@ model Account {
   updatedAt   DateTime      @updatedAt
   WorkSession WorkSession[]
 
+  @@index([name])
   @@map("accounts")
 }
 
